@@ -1,0 +1,119 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    width: 100%;
+}
+
+.login{
+    background-color: #15157c;
+    max-width: 550px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* gap: 20px; */
+    padding: 10px 6px 12px 6px;
+    margin: 150px auto;
+    border-radius: 5px;
+}
+
+.picture{
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+}
+.form__group label{
+    font-weight: bold;
+}
+
+.form__group input{
+  padding: 12px 25px;
+  border: 3px solid rgb(198, 198, 198);
+}
+
+.form__btn{
+    margin-top: 20px;
+    width: 150px;
+    padding: 12px 0 ;
+    border: 3px solid white;
+    background-color: rgb(28, 28, 79);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__btn:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+/* .addClass{
+    color: blue;
+}
+
+.cambio-titulo{
+    color: blue;
+}
+
+.contenedor {
+    width: 150px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.contenedor nav{
+    background-color: aqua;
+
+} */
+
+/* .userClass{
+    color: red;
+    font-weight: bold;
+} */
+
+.mensaje{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.okay{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
